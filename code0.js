@@ -1884,6 +1884,12 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5)
 {
 
 
+gdjs.HomeCode.condition0IsTrue_0.val = false;
+{
+gdjs.HomeCode.condition0IsTrue_0.val = !(gdjs.evtTools.firebaseTools.auth.isAuthentified());
+}if (gdjs.HomeCode.condition0IsTrue_0.val) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Login", false);
+}}
 
 }
 
