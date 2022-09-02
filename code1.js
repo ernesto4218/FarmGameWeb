@@ -116,7 +116,7 @@ gdjs.LoginCode.eventsList0(runtimeScene);} //End of subevents
 
 };gdjs.LoginCode.mapOfGDgdjs_46LoginCode_46GDGoogleSigninObjects2Objects = Hashtable.newFrom({"GoogleSignin": gdjs.LoginCode.GDGoogleSigninObjects2});
 gdjs.LoginCode.mapOfGDgdjs_46LoginCode_46GDGoogleSigninObjects2Objects = Hashtable.newFrom({"GoogleSignin": gdjs.LoginCode.GDGoogleSigninObjects2});
-gdjs.LoginCode.asyncCallback11981092 = function (runtimeScene, asyncObjectsList) {
+gdjs.LoginCode.asyncCallback11973652 = function (runtimeScene, asyncObjectsList) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Home", false);
 }}
 gdjs.LoginCode.eventsList2 = function(runtimeScene) {
@@ -127,7 +127,7 @@ gdjs.LoginCode.eventsList2 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.LoginCode.asyncCallback11981092(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.LoginCode.asyncCallback11973652(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -170,7 +170,7 @@ gdjs.LoginCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonRelease
 }if ( gdjs.LoginCode.condition1IsTrue_0.val ) {
 {
 {gdjs.LoginCode.conditionTrue_1 = gdjs.LoginCode.condition2IsTrue_0;
-gdjs.LoginCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11975436);
+gdjs.LoginCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11967996);
 }
 }}
 }
@@ -195,7 +195,7 @@ gdjs.LoginCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonRelease
 }if ( gdjs.LoginCode.condition1IsTrue_0.val ) {
 {
 {gdjs.LoginCode.conditionTrue_1 = gdjs.LoginCode.condition2IsTrue_0;
-gdjs.LoginCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11976284);
+gdjs.LoginCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11968844);
 }
 }}
 }
@@ -227,7 +227,7 @@ for(var i = 0, k = 0, l = gdjs.LoginCode.GDGoogleSigninObjects2.length;i<l;++i) 
 gdjs.LoginCode.GDGoogleSigninObjects2.length = k;}if ( gdjs.LoginCode.condition0IsTrue_0.val ) {
 {
 {gdjs.LoginCode.conditionTrue_1 = gdjs.LoginCode.condition1IsTrue_0;
-gdjs.LoginCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11977372);
+gdjs.LoginCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11969932);
 }
 }}
 if (gdjs.LoginCode.condition1IsTrue_0.val) {
@@ -258,7 +258,7 @@ gdjs.LoginCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableString
 }if ( gdjs.LoginCode.condition0IsTrue_0.val ) {
 {
 {gdjs.LoginCode.conditionTrue_1 = gdjs.LoginCode.condition1IsTrue_0;
-gdjs.LoginCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11978948);
+gdjs.LoginCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11971508);
 }
 }}
 if (gdjs.LoginCode.condition1IsTrue_0.val) {
@@ -290,7 +290,7 @@ gdjs.LoginCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableString
 }if ( gdjs.LoginCode.condition0IsTrue_0.val ) {
 {
 {gdjs.LoginCode.conditionTrue_1 = gdjs.LoginCode.condition1IsTrue_0;
-gdjs.LoginCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11980340);
+gdjs.LoginCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11972900);
 }
 }}
 if (gdjs.LoginCode.condition1IsTrue_0.val) {
@@ -315,7 +315,7 @@ gdjs.LoginCode.eventsList2(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.LoginCode.asyncCallback11983724 = function (runtimeScene, asyncObjectsList) {
+};gdjs.LoginCode.asyncCallback11976284 = function (runtimeScene, asyncObjectsList) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Home", false);
 }}
 gdjs.LoginCode.eventsList4 = function(runtimeScene) {
@@ -326,7 +326,7 @@ gdjs.LoginCode.eventsList4 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.LoginCode.asyncCallback11983724(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.LoginCode.asyncCallback11976284(runtimeScene, asyncObjectsList)));
 }
 }
 

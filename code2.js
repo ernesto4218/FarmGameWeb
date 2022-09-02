@@ -136,7 +136,7 @@ gdjs.TestingCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runti
 }if ( gdjs.TestingCode.condition0IsTrue_0.val ) {
 {
 {gdjs.TestingCode.conditionTrue_1 = gdjs.TestingCode.condition1IsTrue_0;
-gdjs.TestingCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12017244);
+gdjs.TestingCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12009804);
 }
 }}
 if (gdjs.TestingCode.condition1IsTrue_0.val) {
@@ -156,7 +156,7 @@ gdjs.TestingCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runti
 }if ( gdjs.TestingCode.condition0IsTrue_0.val ) {
 {
 {gdjs.TestingCode.conditionTrue_1 = gdjs.TestingCode.condition1IsTrue_0;
-gdjs.TestingCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12018188);
+gdjs.TestingCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12010748);
 }
 }}
 if (gdjs.TestingCode.condition1IsTrue_0.val) {
@@ -194,7 +194,7 @@ gdjs.TestingCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableStri
 }if ( gdjs.TestingCode.condition0IsTrue_0.val ) {
 {
 {gdjs.TestingCode.conditionTrue_1 = gdjs.TestingCode.condition1IsTrue_0;
-gdjs.TestingCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12021004);
+gdjs.TestingCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12013564);
 }
 }}
 if (gdjs.TestingCode.condition1IsTrue_0.val) {
