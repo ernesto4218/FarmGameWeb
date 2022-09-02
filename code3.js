@@ -3,10 +3,30 @@ gdjs.MarketCode.GDBackgroundObjects1= [];
 gdjs.MarketCode.GDBackgroundObjects2= [];
 gdjs.MarketCode.GDBackgroundObjects3= [];
 gdjs.MarketCode.GDBackgroundObjects4= [];
-gdjs.MarketCode.GDCropsAmountTxTObjects1= [];
-gdjs.MarketCode.GDCropsAmountTxTObjects2= [];
-gdjs.MarketCode.GDCropsAmountTxTObjects3= [];
-gdjs.MarketCode.GDCropsAmountTxTObjects4= [];
+gdjs.MarketCode.GDCarrotsAmountObjects1= [];
+gdjs.MarketCode.GDCarrotsAmountObjects2= [];
+gdjs.MarketCode.GDCarrotsAmountObjects3= [];
+gdjs.MarketCode.GDCarrotsAmountObjects4= [];
+gdjs.MarketCode.GDPotatoAmountObjects1= [];
+gdjs.MarketCode.GDPotatoAmountObjects2= [];
+gdjs.MarketCode.GDPotatoAmountObjects3= [];
+gdjs.MarketCode.GDPotatoAmountObjects4= [];
+gdjs.MarketCode.GDTomatoAmountObjects1= [];
+gdjs.MarketCode.GDTomatoAmountObjects2= [];
+gdjs.MarketCode.GDTomatoAmountObjects3= [];
+gdjs.MarketCode.GDTomatoAmountObjects4= [];
+gdjs.MarketCode.GDStrawberryAmountObjects1= [];
+gdjs.MarketCode.GDStrawberryAmountObjects2= [];
+gdjs.MarketCode.GDStrawberryAmountObjects3= [];
+gdjs.MarketCode.GDStrawberryAmountObjects4= [];
+gdjs.MarketCode.GDCornAmountObjects1= [];
+gdjs.MarketCode.GDCornAmountObjects2= [];
+gdjs.MarketCode.GDCornAmountObjects3= [];
+gdjs.MarketCode.GDCornAmountObjects4= [];
+gdjs.MarketCode.GDCabbageAmoutnObjects1= [];
+gdjs.MarketCode.GDCabbageAmoutnObjects2= [];
+gdjs.MarketCode.GDCabbageAmoutnObjects3= [];
+gdjs.MarketCode.GDCabbageAmoutnObjects4= [];
 gdjs.MarketCode.GDCropsNameTxTObjects1= [];
 gdjs.MarketCode.GDCropsNameTxTObjects2= [];
 gdjs.MarketCode.GDCropsNameTxTObjects3= [];
@@ -81,21 +101,11 @@ gdjs.MarketCode.eventsList0 = function(runtimeScene) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("CropsAmountTxT"), gdjs.MarketCode.GDCropsAmountTxTObjects2);
 
-gdjs.MarketCode.condition0IsTrue_0.val = false;
 {
-for(var i = 0, k = 0, l = gdjs.MarketCode.GDCropsAmountTxTObjects2.length;i<l;++i) {
-    if ( gdjs.MarketCode.GDCropsAmountTxTObjects2[i].getVariableString(gdjs.MarketCode.GDCropsAmountTxTObjects2[i].getVariables().get("ID")) == "Carrot" ) {
-        gdjs.MarketCode.condition0IsTrue_0.val = true;
-        gdjs.MarketCode.GDCropsAmountTxTObjects2[k] = gdjs.MarketCode.GDCropsAmountTxTObjects2[i];
-        ++k;
-    }
-}
-gdjs.MarketCode.GDCropsAmountTxTObjects2.length = k;}if (gdjs.MarketCode.condition0IsTrue_0.val) {
-/* Reuse gdjs.MarketCode.GDCropsAmountTxTObjects2 */
-{for(var i = 0, len = gdjs.MarketCode.GDCropsAmountTxTObjects2.length ;i < len;++i) {
-    gdjs.MarketCode.GDCropsAmountTxTObjects2[i].setString(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Carrot"))));
+gdjs.copyArray(runtimeScene.getObjects("CarrotsAmount"), gdjs.MarketCode.GDCarrotsAmountObjects2);
+{for(var i = 0, len = gdjs.MarketCode.GDCarrotsAmountObjects2.length ;i < len;++i) {
+    gdjs.MarketCode.GDCarrotsAmountObjects2[i].setString(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Carrot"))));
 }
 }}
 
@@ -104,21 +114,11 @@ gdjs.MarketCode.GDCropsAmountTxTObjects2.length = k;}if (gdjs.MarketCode.conditi
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("CropsAmountTxT"), gdjs.MarketCode.GDCropsAmountTxTObjects2);
 
-gdjs.MarketCode.condition0IsTrue_0.val = false;
 {
-for(var i = 0, k = 0, l = gdjs.MarketCode.GDCropsAmountTxTObjects2.length;i<l;++i) {
-    if ( gdjs.MarketCode.GDCropsAmountTxTObjects2[i].getVariableString(gdjs.MarketCode.GDCropsAmountTxTObjects2[i].getVariables().get("ID")) == "Potato" ) {
-        gdjs.MarketCode.condition0IsTrue_0.val = true;
-        gdjs.MarketCode.GDCropsAmountTxTObjects2[k] = gdjs.MarketCode.GDCropsAmountTxTObjects2[i];
-        ++k;
-    }
-}
-gdjs.MarketCode.GDCropsAmountTxTObjects2.length = k;}if (gdjs.MarketCode.condition0IsTrue_0.val) {
-/* Reuse gdjs.MarketCode.GDCropsAmountTxTObjects2 */
-{for(var i = 0, len = gdjs.MarketCode.GDCropsAmountTxTObjects2.length ;i < len;++i) {
-    gdjs.MarketCode.GDCropsAmountTxTObjects2[i].setString(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Potato"))));
+gdjs.copyArray(runtimeScene.getObjects("PotatoAmount"), gdjs.MarketCode.GDPotatoAmountObjects2);
+{for(var i = 0, len = gdjs.MarketCode.GDPotatoAmountObjects2.length ;i < len;++i) {
+    gdjs.MarketCode.GDPotatoAmountObjects2[i].setString(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Potato"))));
 }
 }}
 
@@ -127,21 +127,11 @@ gdjs.MarketCode.GDCropsAmountTxTObjects2.length = k;}if (gdjs.MarketCode.conditi
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("CropsAmountTxT"), gdjs.MarketCode.GDCropsAmountTxTObjects2);
 
-gdjs.MarketCode.condition0IsTrue_0.val = false;
 {
-for(var i = 0, k = 0, l = gdjs.MarketCode.GDCropsAmountTxTObjects2.length;i<l;++i) {
-    if ( gdjs.MarketCode.GDCropsAmountTxTObjects2[i].getVariableString(gdjs.MarketCode.GDCropsAmountTxTObjects2[i].getVariables().get("ID")) == "Tomato" ) {
-        gdjs.MarketCode.condition0IsTrue_0.val = true;
-        gdjs.MarketCode.GDCropsAmountTxTObjects2[k] = gdjs.MarketCode.GDCropsAmountTxTObjects2[i];
-        ++k;
-    }
-}
-gdjs.MarketCode.GDCropsAmountTxTObjects2.length = k;}if (gdjs.MarketCode.condition0IsTrue_0.val) {
-/* Reuse gdjs.MarketCode.GDCropsAmountTxTObjects2 */
-{for(var i = 0, len = gdjs.MarketCode.GDCropsAmountTxTObjects2.length ;i < len;++i) {
-    gdjs.MarketCode.GDCropsAmountTxTObjects2[i].setString(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Tomato"))));
+gdjs.copyArray(runtimeScene.getObjects("TomatoAmount"), gdjs.MarketCode.GDTomatoAmountObjects2);
+{for(var i = 0, len = gdjs.MarketCode.GDTomatoAmountObjects2.length ;i < len;++i) {
+    gdjs.MarketCode.GDTomatoAmountObjects2[i].setString(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Tomato"))));
 }
 }}
 
@@ -150,21 +140,11 @@ gdjs.MarketCode.GDCropsAmountTxTObjects2.length = k;}if (gdjs.MarketCode.conditi
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("CropsAmountTxT"), gdjs.MarketCode.GDCropsAmountTxTObjects2);
 
-gdjs.MarketCode.condition0IsTrue_0.val = false;
 {
-for(var i = 0, k = 0, l = gdjs.MarketCode.GDCropsAmountTxTObjects2.length;i<l;++i) {
-    if ( gdjs.MarketCode.GDCropsAmountTxTObjects2[i].getVariableString(gdjs.MarketCode.GDCropsAmountTxTObjects2[i].getVariables().get("ID")) == "Corn" ) {
-        gdjs.MarketCode.condition0IsTrue_0.val = true;
-        gdjs.MarketCode.GDCropsAmountTxTObjects2[k] = gdjs.MarketCode.GDCropsAmountTxTObjects2[i];
-        ++k;
-    }
-}
-gdjs.MarketCode.GDCropsAmountTxTObjects2.length = k;}if (gdjs.MarketCode.condition0IsTrue_0.val) {
-/* Reuse gdjs.MarketCode.GDCropsAmountTxTObjects2 */
-{for(var i = 0, len = gdjs.MarketCode.GDCropsAmountTxTObjects2.length ;i < len;++i) {
-    gdjs.MarketCode.GDCropsAmountTxTObjects2[i].setString(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Corn"))));
+gdjs.copyArray(runtimeScene.getObjects("CornAmount"), gdjs.MarketCode.GDCornAmountObjects2);
+{for(var i = 0, len = gdjs.MarketCode.GDCornAmountObjects2.length ;i < len;++i) {
+    gdjs.MarketCode.GDCornAmountObjects2[i].setString(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Corn"))));
 }
 }}
 
@@ -173,21 +153,11 @@ gdjs.MarketCode.GDCropsAmountTxTObjects2.length = k;}if (gdjs.MarketCode.conditi
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("CropsAmountTxT"), gdjs.MarketCode.GDCropsAmountTxTObjects2);
 
-gdjs.MarketCode.condition0IsTrue_0.val = false;
 {
-for(var i = 0, k = 0, l = gdjs.MarketCode.GDCropsAmountTxTObjects2.length;i<l;++i) {
-    if ( gdjs.MarketCode.GDCropsAmountTxTObjects2[i].getVariableString(gdjs.MarketCode.GDCropsAmountTxTObjects2[i].getVariables().get("ID")) == "Cabbage" ) {
-        gdjs.MarketCode.condition0IsTrue_0.val = true;
-        gdjs.MarketCode.GDCropsAmountTxTObjects2[k] = gdjs.MarketCode.GDCropsAmountTxTObjects2[i];
-        ++k;
-    }
-}
-gdjs.MarketCode.GDCropsAmountTxTObjects2.length = k;}if (gdjs.MarketCode.condition0IsTrue_0.val) {
-/* Reuse gdjs.MarketCode.GDCropsAmountTxTObjects2 */
-{for(var i = 0, len = gdjs.MarketCode.GDCropsAmountTxTObjects2.length ;i < len;++i) {
-    gdjs.MarketCode.GDCropsAmountTxTObjects2[i].setString(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Cabbage"))));
+gdjs.copyArray(runtimeScene.getObjects("CabbageAmoutn"), gdjs.MarketCode.GDCabbageAmoutnObjects2);
+{for(var i = 0, len = gdjs.MarketCode.GDCabbageAmoutnObjects2.length ;i < len;++i) {
+    gdjs.MarketCode.GDCabbageAmoutnObjects2[i].setString(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Cabbage"))));
 }
 }}
 
@@ -196,21 +166,11 @@ gdjs.MarketCode.GDCropsAmountTxTObjects2.length = k;}if (gdjs.MarketCode.conditi
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("CropsAmountTxT"), gdjs.MarketCode.GDCropsAmountTxTObjects2);
 
-gdjs.MarketCode.condition0IsTrue_0.val = false;
 {
-for(var i = 0, k = 0, l = gdjs.MarketCode.GDCropsAmountTxTObjects2.length;i<l;++i) {
-    if ( gdjs.MarketCode.GDCropsAmountTxTObjects2[i].getVariableString(gdjs.MarketCode.GDCropsAmountTxTObjects2[i].getVariables().get("ID")) == "Strawberry" ) {
-        gdjs.MarketCode.condition0IsTrue_0.val = true;
-        gdjs.MarketCode.GDCropsAmountTxTObjects2[k] = gdjs.MarketCode.GDCropsAmountTxTObjects2[i];
-        ++k;
-    }
-}
-gdjs.MarketCode.GDCropsAmountTxTObjects2.length = k;}if (gdjs.MarketCode.condition0IsTrue_0.val) {
-/* Reuse gdjs.MarketCode.GDCropsAmountTxTObjects2 */
-{for(var i = 0, len = gdjs.MarketCode.GDCropsAmountTxTObjects2.length ;i < len;++i) {
-    gdjs.MarketCode.GDCropsAmountTxTObjects2[i].setString(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Strawberry"))));
+gdjs.copyArray(runtimeScene.getObjects("StrawberryAmount"), gdjs.MarketCode.GDStrawberryAmountObjects2);
+{for(var i = 0, len = gdjs.MarketCode.GDStrawberryAmountObjects2.length ;i < len;++i) {
+    gdjs.MarketCode.GDStrawberryAmountObjects2[i].setString(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Strawberry"))));
 }
 }}
 
@@ -1550,10 +1510,30 @@ gdjs.MarketCode.GDBackgroundObjects1.length = 0;
 gdjs.MarketCode.GDBackgroundObjects2.length = 0;
 gdjs.MarketCode.GDBackgroundObjects3.length = 0;
 gdjs.MarketCode.GDBackgroundObjects4.length = 0;
-gdjs.MarketCode.GDCropsAmountTxTObjects1.length = 0;
-gdjs.MarketCode.GDCropsAmountTxTObjects2.length = 0;
-gdjs.MarketCode.GDCropsAmountTxTObjects3.length = 0;
-gdjs.MarketCode.GDCropsAmountTxTObjects4.length = 0;
+gdjs.MarketCode.GDCarrotsAmountObjects1.length = 0;
+gdjs.MarketCode.GDCarrotsAmountObjects2.length = 0;
+gdjs.MarketCode.GDCarrotsAmountObjects3.length = 0;
+gdjs.MarketCode.GDCarrotsAmountObjects4.length = 0;
+gdjs.MarketCode.GDPotatoAmountObjects1.length = 0;
+gdjs.MarketCode.GDPotatoAmountObjects2.length = 0;
+gdjs.MarketCode.GDPotatoAmountObjects3.length = 0;
+gdjs.MarketCode.GDPotatoAmountObjects4.length = 0;
+gdjs.MarketCode.GDTomatoAmountObjects1.length = 0;
+gdjs.MarketCode.GDTomatoAmountObjects2.length = 0;
+gdjs.MarketCode.GDTomatoAmountObjects3.length = 0;
+gdjs.MarketCode.GDTomatoAmountObjects4.length = 0;
+gdjs.MarketCode.GDStrawberryAmountObjects1.length = 0;
+gdjs.MarketCode.GDStrawberryAmountObjects2.length = 0;
+gdjs.MarketCode.GDStrawberryAmountObjects3.length = 0;
+gdjs.MarketCode.GDStrawberryAmountObjects4.length = 0;
+gdjs.MarketCode.GDCornAmountObjects1.length = 0;
+gdjs.MarketCode.GDCornAmountObjects2.length = 0;
+gdjs.MarketCode.GDCornAmountObjects3.length = 0;
+gdjs.MarketCode.GDCornAmountObjects4.length = 0;
+gdjs.MarketCode.GDCabbageAmoutnObjects1.length = 0;
+gdjs.MarketCode.GDCabbageAmoutnObjects2.length = 0;
+gdjs.MarketCode.GDCabbageAmoutnObjects3.length = 0;
+gdjs.MarketCode.GDCabbageAmoutnObjects4.length = 0;
 gdjs.MarketCode.GDCropsNameTxTObjects1.length = 0;
 gdjs.MarketCode.GDCropsNameTxTObjects2.length = 0;
 gdjs.MarketCode.GDCropsNameTxTObjects3.length = 0;
