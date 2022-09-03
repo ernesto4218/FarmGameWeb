@@ -217,7 +217,7 @@ gdjs.copyArray(runtimeScene.getObjects("CoinTxT"), gdjs.MarketCode.GDCoinTxTObje
 
 
 };gdjs.MarketCode.mapOfGDgdjs_46MarketCode_46GDNavBtnObjects2Objects = Hashtable.newFrom({"NavBtn": gdjs.MarketCode.GDNavBtnObjects2});
-gdjs.MarketCode.asyncCallback12040772 = function (runtimeScene, asyncObjectsList) {
+gdjs.MarketCode.asyncCallback11966388 = function (runtimeScene, asyncObjectsList) {
 gdjs.copyArray(asyncObjectsList.getObjects("NavBtn"), gdjs.MarketCode.GDNavBtnObjects4);
 
 {for(var i = 0, len = gdjs.MarketCode.GDNavBtnObjects4.length ;i < len;++i) {
@@ -233,14 +233,14 @@ gdjs.MarketCode.eventsList1 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 for (const obj of gdjs.MarketCode.GDNavBtnObjects3) asyncObjectsList.addObject("NavBtn", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.MarketCode.asyncCallback12040772(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.MarketCode.asyncCallback11966388(runtimeScene, asyncObjectsList)));
 }
 }
 
 }
 
 
-};gdjs.MarketCode.asyncCallback12012844 = function (runtimeScene, asyncObjectsList) {
+};gdjs.MarketCode.asyncCallback11993964 = function (runtimeScene, asyncObjectsList) {
 gdjs.copyArray(asyncObjectsList.getObjects("NavBtn"), gdjs.MarketCode.GDNavBtnObjects3);
 
 {for(var i = 0, len = gdjs.MarketCode.GDNavBtnObjects3.length ;i < len;++i) {
@@ -256,7 +256,7 @@ gdjs.MarketCode.eventsList2 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 for (const obj of gdjs.MarketCode.GDNavBtnObjects2) asyncObjectsList.addObject("NavBtn", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.MarketCode.asyncCallback12012844(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.MarketCode.asyncCallback11993964(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -283,7 +283,7 @@ for(var i = 0, k = 0, l = gdjs.MarketCode.GDNavBtnObjects3.length;i<l;++i) {
 gdjs.MarketCode.GDNavBtnObjects3.length = k;}if ( gdjs.MarketCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MarketCode.conditionTrue_1 = gdjs.MarketCode.condition1IsTrue_0;
-gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11985596);
+gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11965508);
 }
 }}
 if (gdjs.MarketCode.condition1IsTrue_0.val) {
@@ -321,7 +321,7 @@ for(var i = 0, k = 0, l = gdjs.MarketCode.GDNavBtnObjects2.length;i<l;++i) {
 gdjs.MarketCode.GDNavBtnObjects2.length = k;}if ( gdjs.MarketCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MarketCode.conditionTrue_1 = gdjs.MarketCode.condition1IsTrue_0;
-gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12042132);
+gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11938748);
 }
 }}
 if (gdjs.MarketCode.condition1IsTrue_0.val) {
@@ -545,7 +545,7 @@ gdjs.copyArray(runtimeScene.getObjects("CropsValueTxT"), gdjs.MarketCode.GDCrops
 
 
 };gdjs.MarketCode.mapOfGDgdjs_46MarketCode_46GDSellBTNObjects2Objects = Hashtable.newFrom({"SellBTN": gdjs.MarketCode.GDSellBTNObjects2});
-gdjs.MarketCode.asyncCallback12046516 = function (runtimeScene, asyncObjectsList) {
+gdjs.MarketCode.asyncCallback11999516 = function (runtimeScene, asyncObjectsList) {
 gdjs.copyArray(asyncObjectsList.getObjects("SellBTN"), gdjs.MarketCode.GDSellBTNObjects3);
 
 {for(var i = 0, len = gdjs.MarketCode.GDSellBTNObjects3.length ;i < len;++i) {
@@ -561,7 +561,7 @@ gdjs.MarketCode.eventsList6 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 for (const obj of gdjs.MarketCode.GDSellBTNObjects2) asyncObjectsList.addObject("SellBTN", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.MarketCode.asyncCallback12046516(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.MarketCode.asyncCallback11999516(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -611,7 +611,7 @@ gdjs.copyArray(runtimeScene.getObjects("SellState"), gdjs.MarketCode.GDSellState
 
 gdjs.MarketCode.condition0IsTrue_0.val = false;
 {
-gdjs.MarketCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Carrot")) <= gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("SellAmount"));
+gdjs.MarketCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Carrot")) < gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("SellAmount"));
 }if (gdjs.MarketCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("AmountSell"), gdjs.MarketCode.GDAmountSellObjects2);
 gdjs.copyArray(runtimeScene.getObjects("SellState"), gdjs.MarketCode.GDSellStateObjects2);
@@ -646,18 +646,13 @@ gdjs.copyArray(runtimeScene.getObjects("SellState"), gdjs.MarketCode.GDSellState
 
 gdjs.MarketCode.condition0IsTrue_0.val = false;
 gdjs.MarketCode.condition1IsTrue_0.val = false;
-gdjs.MarketCode.condition2IsTrue_0.val = false;
 {
 gdjs.MarketCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Potato")) >= gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("SellAmount"));
 }if ( gdjs.MarketCode.condition0IsTrue_0.val ) {
 {
-gdjs.MarketCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Potato")) >= 1;
-}if ( gdjs.MarketCode.condition1IsTrue_0.val ) {
-{
-gdjs.MarketCode.condition2IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("SellAmount")) >= 1;
+gdjs.MarketCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Potato")) > 0;
 }}
-}
-if (gdjs.MarketCode.condition2IsTrue_0.val) {
+if (gdjs.MarketCode.condition1IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("SellState"), gdjs.MarketCode.GDSellStateObjects3);
 {runtimeScene.getVariables().get("SellCrops").setString("Potato");
 }{for(var i = 0, len = gdjs.MarketCode.GDSellStateObjects3.length ;i < len;++i) {
@@ -680,7 +675,7 @@ gdjs.copyArray(runtimeScene.getObjects("SellState"), gdjs.MarketCode.GDSellState
 
 gdjs.MarketCode.condition0IsTrue_0.val = false;
 {
-gdjs.MarketCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Potato")) <= gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("SellAmount"));
+gdjs.MarketCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Potato")) < gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("SellAmount"));
 }if (gdjs.MarketCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("AmountSell"), gdjs.MarketCode.GDAmountSellObjects2);
 gdjs.copyArray(runtimeScene.getObjects("SellState"), gdjs.MarketCode.GDSellStateObjects2);
@@ -691,7 +686,7 @@ gdjs.copyArray(runtimeScene.getObjects("SellState"), gdjs.MarketCode.GDSellState
     gdjs.MarketCode.GDAmountSellObjects2[i].setString("0");
 }
 }{for(var i = 0, len = gdjs.MarketCode.GDSellStateObjects2.length ;i < len;++i) {
-    gdjs.MarketCode.GDSellStateObjects2[i].setString("Not enough carrots");
+    gdjs.MarketCode.GDSellStateObjects2[i].setString("Not enough potatoes");
 }
 }{for(var i = 0, len = gdjs.MarketCode.GDAmountSellObjects2.length ;i < len;++i) {
     gdjs.MarketCode.GDAmountSellObjects2[i].setDisabled(false);
@@ -714,13 +709,269 @@ gdjs.copyArray(runtimeScene.getObjects("SellState"), gdjs.MarketCode.GDSellState
 
 
 gdjs.MarketCode.condition0IsTrue_0.val = false;
+gdjs.MarketCode.condition1IsTrue_0.val = false;
+{
+gdjs.MarketCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Tomato")) >= gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("SellAmount"));
+}if ( gdjs.MarketCode.condition0IsTrue_0.val ) {
+{
+gdjs.MarketCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Tomato")) > 0;
+}}
+if (gdjs.MarketCode.condition1IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("SellState"), gdjs.MarketCode.GDSellStateObjects3);
+{runtimeScene.getVariables().get("SellCrops").setString("Tomato");
+}{for(var i = 0, len = gdjs.MarketCode.GDSellStateObjects3.length ;i < len;++i) {
+    gdjs.MarketCode.GDSellStateObjects3[i].setString("Verifying transaction");
+}
+}}
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+
+gdjs.MarketCode.condition0IsTrue_0.val = false;
+{
+gdjs.MarketCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Tomato")) < gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("SellAmount"));
+}if (gdjs.MarketCode.condition0IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("AmountSell"), gdjs.MarketCode.GDAmountSellObjects2);
+gdjs.copyArray(runtimeScene.getObjects("SellState"), gdjs.MarketCode.GDSellStateObjects2);
+{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getVariables().get("Selling"), false);
+}{runtimeScene.getVariables().get("FetchedDataTransactionState").setString("");
+}{runtimeScene.getVariables().get("FetchedCropValueState").setString("");
+}{for(var i = 0, len = gdjs.MarketCode.GDAmountSellObjects2.length ;i < len;++i) {
+    gdjs.MarketCode.GDAmountSellObjects2[i].setString("0");
+}
+}{for(var i = 0, len = gdjs.MarketCode.GDSellStateObjects2.length ;i < len;++i) {
+    gdjs.MarketCode.GDSellStateObjects2[i].setString("Not enough tomatoes");
+}
+}{for(var i = 0, len = gdjs.MarketCode.GDAmountSellObjects2.length ;i < len;++i) {
+    gdjs.MarketCode.GDAmountSellObjects2[i].setDisabled(false);
+}
+}}
+
+}
+
+
+};gdjs.MarketCode.eventsList10 = function(runtimeScene) {
+
+{
+
+
+
+}
+
+
+{
+
+
+gdjs.MarketCode.condition0IsTrue_0.val = false;
+gdjs.MarketCode.condition1IsTrue_0.val = false;
+{
+gdjs.MarketCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Corn")) >= gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("SellAmount"));
+}if ( gdjs.MarketCode.condition0IsTrue_0.val ) {
+{
+gdjs.MarketCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Corn")) > 0;
+}}
+if (gdjs.MarketCode.condition1IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("SellState"), gdjs.MarketCode.GDSellStateObjects3);
+{runtimeScene.getVariables().get("SellCrops").setString("Corn");
+}{for(var i = 0, len = gdjs.MarketCode.GDSellStateObjects3.length ;i < len;++i) {
+    gdjs.MarketCode.GDSellStateObjects3[i].setString("Verifying transaction");
+}
+}}
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+
+gdjs.MarketCode.condition0IsTrue_0.val = false;
+{
+gdjs.MarketCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Corn")) < gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("SellAmount"));
+}if (gdjs.MarketCode.condition0IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("AmountSell"), gdjs.MarketCode.GDAmountSellObjects2);
+gdjs.copyArray(runtimeScene.getObjects("SellState"), gdjs.MarketCode.GDSellStateObjects2);
+{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getVariables().get("Selling"), false);
+}{runtimeScene.getVariables().get("FetchedDataTransactionState").setString("");
+}{runtimeScene.getVariables().get("FetchedCropValueState").setString("");
+}{for(var i = 0, len = gdjs.MarketCode.GDAmountSellObjects2.length ;i < len;++i) {
+    gdjs.MarketCode.GDAmountSellObjects2[i].setString("0");
+}
+}{for(var i = 0, len = gdjs.MarketCode.GDSellStateObjects2.length ;i < len;++i) {
+    gdjs.MarketCode.GDSellStateObjects2[i].setString("Not enough corns");
+}
+}{for(var i = 0, len = gdjs.MarketCode.GDAmountSellObjects2.length ;i < len;++i) {
+    gdjs.MarketCode.GDAmountSellObjects2[i].setDisabled(false);
+}
+}}
+
+}
+
+
+};gdjs.MarketCode.eventsList11 = function(runtimeScene) {
+
+{
+
+
+
+}
+
+
+{
+
+
+gdjs.MarketCode.condition0IsTrue_0.val = false;
+gdjs.MarketCode.condition1IsTrue_0.val = false;
+{
+gdjs.MarketCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Cabbage")) >= gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("SellAmount"));
+}if ( gdjs.MarketCode.condition0IsTrue_0.val ) {
+{
+gdjs.MarketCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Cabbage")) > 0;
+}}
+if (gdjs.MarketCode.condition1IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("SellState"), gdjs.MarketCode.GDSellStateObjects3);
+{runtimeScene.getVariables().get("SellCrops").setString("Cabbage");
+}{for(var i = 0, len = gdjs.MarketCode.GDSellStateObjects3.length ;i < len;++i) {
+    gdjs.MarketCode.GDSellStateObjects3[i].setString("Verifying transaction");
+}
+}}
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+
+gdjs.MarketCode.condition0IsTrue_0.val = false;
+{
+gdjs.MarketCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Cabbage")) < gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("SellAmount"));
+}if (gdjs.MarketCode.condition0IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("AmountSell"), gdjs.MarketCode.GDAmountSellObjects2);
+gdjs.copyArray(runtimeScene.getObjects("SellState"), gdjs.MarketCode.GDSellStateObjects2);
+{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getVariables().get("Selling"), false);
+}{runtimeScene.getVariables().get("FetchedDataTransactionState").setString("");
+}{runtimeScene.getVariables().get("FetchedCropValueState").setString("");
+}{for(var i = 0, len = gdjs.MarketCode.GDAmountSellObjects2.length ;i < len;++i) {
+    gdjs.MarketCode.GDAmountSellObjects2[i].setString("0");
+}
+}{for(var i = 0, len = gdjs.MarketCode.GDSellStateObjects2.length ;i < len;++i) {
+    gdjs.MarketCode.GDSellStateObjects2[i].setString("Not enough cabbages");
+}
+}{for(var i = 0, len = gdjs.MarketCode.GDAmountSellObjects2.length ;i < len;++i) {
+    gdjs.MarketCode.GDAmountSellObjects2[i].setDisabled(false);
+}
+}}
+
+}
+
+
+};gdjs.MarketCode.eventsList12 = function(runtimeScene) {
+
+{
+
+
+
+}
+
+
+{
+
+
+gdjs.MarketCode.condition0IsTrue_0.val = false;
+gdjs.MarketCode.condition1IsTrue_0.val = false;
+{
+gdjs.MarketCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Strawberry")) >= gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("SellAmount"));
+}if ( gdjs.MarketCode.condition0IsTrue_0.val ) {
+{
+gdjs.MarketCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Strawberry")) > 0;
+}}
+if (gdjs.MarketCode.condition1IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("SellState"), gdjs.MarketCode.GDSellStateObjects3);
+{runtimeScene.getVariables().get("SellCrops").setString("Strawberry");
+}{for(var i = 0, len = gdjs.MarketCode.GDSellStateObjects3.length ;i < len;++i) {
+    gdjs.MarketCode.GDSellStateObjects3[i].setString("Verifying transaction");
+}
+}}
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+
+gdjs.MarketCode.condition0IsTrue_0.val = false;
+{
+gdjs.MarketCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Strawberry")) < gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("SellAmount"));
+}if (gdjs.MarketCode.condition0IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("AmountSell"), gdjs.MarketCode.GDAmountSellObjects2);
+gdjs.copyArray(runtimeScene.getObjects("SellState"), gdjs.MarketCode.GDSellStateObjects2);
+{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getVariables().get("Selling"), false);
+}{runtimeScene.getVariables().get("FetchedDataTransactionState").setString("");
+}{runtimeScene.getVariables().get("FetchedCropValueState").setString("");
+}{for(var i = 0, len = gdjs.MarketCode.GDAmountSellObjects2.length ;i < len;++i) {
+    gdjs.MarketCode.GDAmountSellObjects2[i].setString("0");
+}
+}{for(var i = 0, len = gdjs.MarketCode.GDSellStateObjects2.length ;i < len;++i) {
+    gdjs.MarketCode.GDSellStateObjects2[i].setString("Not enough strawberries");
+}
+}{for(var i = 0, len = gdjs.MarketCode.GDAmountSellObjects2.length ;i < len;++i) {
+    gdjs.MarketCode.GDAmountSellObjects2[i].setDisabled(false);
+}
+}}
+
+}
+
+
+};gdjs.MarketCode.eventsList13 = function(runtimeScene) {
+
+{
+
+
+
+}
+
+
+{
+
+
+gdjs.MarketCode.condition0IsTrue_0.val = false;
 {
 gdjs.MarketCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableString(runtimeScene.getVariables().get("SellCrops")) == "Carrot";
 }if (gdjs.MarketCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("AmountSell"), gdjs.MarketCode.GDAmountSellObjects3);
 gdjs.copyArray(runtimeScene.getObjects("SellState"), gdjs.MarketCode.GDSellStateObjects3);
 {runtimeScene.getVariables().get("CarrotSold").setNumber(gdjs.evtTools.common.toNumber((( gdjs.MarketCode.GDAmountSellObjects3.length === 0 ) ? "" :gdjs.MarketCode.GDAmountSellObjects3[0].getString())) * gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedCropValue").getChild("Carrot")));
-}{gdjs.evtTools.firebaseTools.database.updateField("Users/" + gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Crops/Carrot", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Carrot")) - gdjs.evtTools.common.toNumber((( gdjs.MarketCode.GDAmountSellObjects3.length === 0 ) ? "" :gdjs.MarketCode.GDAmountSellObjects3[0].getString()))), runtimeScene.getVariables().get("UpdateCarrotState"));
+}{gdjs.evtTools.firebaseTools.database.updateField("Users/" + gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Crops/Carrot", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Carrot")) - gdjs.evtTools.common.toNumber((( gdjs.MarketCode.GDAmountSellObjects3.length === 0 ) ? "" :gdjs.MarketCode.GDAmountSellObjects3[0].getString()))), runtimeScene.getVariables().get("UpdateCropTransactionState"));
 }{gdjs.evtTools.firebaseTools.database.updateField("Users/" + gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Variables/Coins", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Variables").getChild("Coins")) + gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("CarrotSold"))), runtimeScene.getVariables().get("UpdateCoinState"));
 }{for(var i = 0, len = gdjs.MarketCode.GDSellStateObjects3.length ;i < len;++i) {
     gdjs.MarketCode.GDSellStateObjects3[i].setString("Transaction verified");
@@ -737,11 +988,91 @@ gdjs.MarketCode.condition0IsTrue_0.val = false;
 {
 gdjs.MarketCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableString(runtimeScene.getVariables().get("SellCrops")) == "Potato";
 }if (gdjs.MarketCode.condition0IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("AmountSell"), gdjs.MarketCode.GDAmountSellObjects3);
+gdjs.copyArray(runtimeScene.getObjects("SellState"), gdjs.MarketCode.GDSellStateObjects3);
+{runtimeScene.getVariables().get("PotatoSold").setNumber(gdjs.evtTools.common.toNumber((( gdjs.MarketCode.GDAmountSellObjects3.length === 0 ) ? "" :gdjs.MarketCode.GDAmountSellObjects3[0].getString())) * gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedCropValue").getChild("Potato")));
+}{gdjs.evtTools.firebaseTools.database.updateField("Users/" + gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Crops/Potato", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Potato")) - gdjs.evtTools.common.toNumber((( gdjs.MarketCode.GDAmountSellObjects3.length === 0 ) ? "" :gdjs.MarketCode.GDAmountSellObjects3[0].getString()))), runtimeScene.getVariables().get("UpdateCropTransactionState"));
+}{gdjs.evtTools.firebaseTools.database.updateField("Users/" + gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Variables/Coins", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Variables").getChild("Coins")) + gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("PotatoSold"))), runtimeScene.getVariables().get("UpdateCoinState"));
+}{for(var i = 0, len = gdjs.MarketCode.GDSellStateObjects3.length ;i < len;++i) {
+    gdjs.MarketCode.GDSellStateObjects3[i].setString("Transaction verified");
+}
+}}
+
+}
+
+
+{
+
+
+gdjs.MarketCode.condition0IsTrue_0.val = false;
+{
+gdjs.MarketCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableString(runtimeScene.getVariables().get("SellCrops")) == "Tomato";
+}if (gdjs.MarketCode.condition0IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("AmountSell"), gdjs.MarketCode.GDAmountSellObjects3);
+gdjs.copyArray(runtimeScene.getObjects("SellState"), gdjs.MarketCode.GDSellStateObjects3);
+{runtimeScene.getVariables().get("TomatoSold").setNumber(gdjs.evtTools.common.toNumber((( gdjs.MarketCode.GDAmountSellObjects3.length === 0 ) ? "" :gdjs.MarketCode.GDAmountSellObjects3[0].getString())) * gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedCropValue").getChild("Tomato")));
+}{gdjs.evtTools.firebaseTools.database.updateField("Users/" + gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Crops/Tomato", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Tomato")) - gdjs.evtTools.common.toNumber((( gdjs.MarketCode.GDAmountSellObjects3.length === 0 ) ? "" :gdjs.MarketCode.GDAmountSellObjects3[0].getString()))), runtimeScene.getVariables().get("UpdateCropTransactionState"));
+}{gdjs.evtTools.firebaseTools.database.updateField("Users/" + gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Variables/Coins", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Variables").getChild("Coins")) + gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("TomatoSold"))), runtimeScene.getVariables().get("UpdateCoinState"));
+}{for(var i = 0, len = gdjs.MarketCode.GDSellStateObjects3.length ;i < len;++i) {
+    gdjs.MarketCode.GDSellStateObjects3[i].setString("Transaction verified");
+}
+}}
+
+}
+
+
+{
+
+
+gdjs.MarketCode.condition0IsTrue_0.val = false;
+{
+gdjs.MarketCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableString(runtimeScene.getVariables().get("SellCrops")) == "Corn";
+}if (gdjs.MarketCode.condition0IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("AmountSell"), gdjs.MarketCode.GDAmountSellObjects3);
+gdjs.copyArray(runtimeScene.getObjects("SellState"), gdjs.MarketCode.GDSellStateObjects3);
+{runtimeScene.getVariables().get("CornSold").setNumber(gdjs.evtTools.common.toNumber((( gdjs.MarketCode.GDAmountSellObjects3.length === 0 ) ? "" :gdjs.MarketCode.GDAmountSellObjects3[0].getString())) * gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedCropValue").getChild("Corn")));
+}{gdjs.evtTools.firebaseTools.database.updateField("Users/" + gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Crops/Corn", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Corn")) - gdjs.evtTools.common.toNumber((( gdjs.MarketCode.GDAmountSellObjects3.length === 0 ) ? "" :gdjs.MarketCode.GDAmountSellObjects3[0].getString()))), runtimeScene.getVariables().get("UpdateCropTransactionState"));
+}{gdjs.evtTools.firebaseTools.database.updateField("Users/" + gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Variables/Coins", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Variables").getChild("Coins")) + gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("CornSold"))), runtimeScene.getVariables().get("UpdateCoinState"));
+}{for(var i = 0, len = gdjs.MarketCode.GDSellStateObjects3.length ;i < len;++i) {
+    gdjs.MarketCode.GDSellStateObjects3[i].setString("Transaction verified");
+}
+}}
+
+}
+
+
+{
+
+
+gdjs.MarketCode.condition0IsTrue_0.val = false;
+{
+gdjs.MarketCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableString(runtimeScene.getVariables().get("SellCrops")) == "Cabbage";
+}if (gdjs.MarketCode.condition0IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("AmountSell"), gdjs.MarketCode.GDAmountSellObjects3);
+gdjs.copyArray(runtimeScene.getObjects("SellState"), gdjs.MarketCode.GDSellStateObjects3);
+{runtimeScene.getVariables().get("CabbageSold").setNumber(gdjs.evtTools.common.toNumber((( gdjs.MarketCode.GDAmountSellObjects3.length === 0 ) ? "" :gdjs.MarketCode.GDAmountSellObjects3[0].getString())) * gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedCropValue").getChild("Cabbage")));
+}{gdjs.evtTools.firebaseTools.database.updateField("Users/" + gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Crops/Cabbage", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Cabbage")) - gdjs.evtTools.common.toNumber((( gdjs.MarketCode.GDAmountSellObjects3.length === 0 ) ? "" :gdjs.MarketCode.GDAmountSellObjects3[0].getString()))), runtimeScene.getVariables().get("UpdateCropTransactionState"));
+}{gdjs.evtTools.firebaseTools.database.updateField("Users/" + gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Variables/Coins", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Variables").getChild("Coins")) + gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("CabbageSold"))), runtimeScene.getVariables().get("UpdateCoinState"));
+}{for(var i = 0, len = gdjs.MarketCode.GDSellStateObjects3.length ;i < len;++i) {
+    gdjs.MarketCode.GDSellStateObjects3[i].setString("Transaction verified");
+}
+}}
+
+}
+
+
+{
+
+
+gdjs.MarketCode.condition0IsTrue_0.val = false;
+{
+gdjs.MarketCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableString(runtimeScene.getVariables().get("SellCrops")) == "Strawberry";
+}if (gdjs.MarketCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("AmountSell"), gdjs.MarketCode.GDAmountSellObjects2);
 gdjs.copyArray(runtimeScene.getObjects("SellState"), gdjs.MarketCode.GDSellStateObjects2);
-{runtimeScene.getVariables().get("PotatoSold").setNumber(gdjs.evtTools.common.toNumber((( gdjs.MarketCode.GDAmountSellObjects2.length === 0 ) ? "" :gdjs.MarketCode.GDAmountSellObjects2[0].getString())) * gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedCropValue").getChild("Potato")));
-}{gdjs.evtTools.firebaseTools.database.updateField("Users/" + gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Crops/Potato", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Potato")) - gdjs.evtTools.common.toNumber((( gdjs.MarketCode.GDAmountSellObjects2.length === 0 ) ? "" :gdjs.MarketCode.GDAmountSellObjects2[0].getString()))), runtimeScene.getVariables().get("UpdateCarrotState"));
-}{gdjs.evtTools.firebaseTools.database.updateField("Users/" + gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Variables/Coins", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Variables").getChild("Coins")) + gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("PotatoSold"))), runtimeScene.getVariables().get("UpdateCoinState"));
+{runtimeScene.getVariables().get("StrawberrySold").setNumber(gdjs.evtTools.common.toNumber((( gdjs.MarketCode.GDAmountSellObjects2.length === 0 ) ? "" :gdjs.MarketCode.GDAmountSellObjects2[0].getString())) * gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedCropValue").getChild("Strawberry")));
+}{gdjs.evtTools.firebaseTools.database.updateField("Users/" + gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Crops/Strawberry", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Crops").getChild("Strawberry")) - gdjs.evtTools.common.toNumber((( gdjs.MarketCode.GDAmountSellObjects2.length === 0 ) ? "" :gdjs.MarketCode.GDAmountSellObjects2[0].getString()))), runtimeScene.getVariables().get("UpdateCropTransactionState"));
+}{gdjs.evtTools.firebaseTools.database.updateField("Users/" + gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Variables/Coins", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("FetchedData").getChild("Variables").getChild("Coins")) + gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("StrawberrySold"))), runtimeScene.getVariables().get("UpdateCoinState"));
 }{for(var i = 0, len = gdjs.MarketCode.GDSellStateObjects2.length ;i < len;++i) {
     gdjs.MarketCode.GDSellStateObjects2[i].setString("Transaction verified");
 }
@@ -750,7 +1081,7 @@ gdjs.copyArray(runtimeScene.getObjects("SellState"), gdjs.MarketCode.GDSellState
 }
 
 
-};gdjs.MarketCode.eventsList10 = function(runtimeScene) {
+};gdjs.MarketCode.eventsList14 = function(runtimeScene) {
 
 {
 
@@ -771,7 +1102,7 @@ gdjs.MarketCode.condition2IsTrue_0.val = gdjs.evtTools.variable.getVariableBoole
 }if ( gdjs.MarketCode.condition2IsTrue_0.val ) {
 {
 {gdjs.MarketCode.conditionTrue_1 = gdjs.MarketCode.condition3IsTrue_0;
-gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12045380);
+gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11955436);
 }
 }}
 }
@@ -832,6 +1163,13 @@ gdjs.copyArray(runtimeScene.getObjects("SellState"), gdjs.MarketCode.GDSellState
 
 {
 
+
+
+}
+
+
+{
+
 gdjs.copyArray(runtimeScene.getObjects("MarketCrop"), gdjs.MarketCode.GDMarketCropObjects2);
 
 gdjs.MarketCode.condition0IsTrue_0.val = false;
@@ -855,7 +1193,7 @@ gdjs.MarketCode.condition2IsTrue_0.val = gdjs.evtTools.variable.getVariableStrin
 }if ( gdjs.MarketCode.condition2IsTrue_0.val ) {
 {
 {gdjs.MarketCode.conditionTrue_1 = gdjs.MarketCode.condition3IsTrue_0;
-gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12049100);
+gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12001900);
 }
 }}
 }
@@ -865,6 +1203,13 @@ if (gdjs.MarketCode.condition3IsTrue_0.val) {
 { //Subevents
 gdjs.MarketCode.eventsList7(runtimeScene);} //End of subevents
 }
+
+}
+
+
+{
+
+
 
 }
 
@@ -894,7 +1239,7 @@ gdjs.MarketCode.condition2IsTrue_0.val = gdjs.evtTools.variable.getVariableStrin
 }if ( gdjs.MarketCode.condition2IsTrue_0.val ) {
 {
 {gdjs.MarketCode.conditionTrue_1 = gdjs.MarketCode.condition3IsTrue_0;
-gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12053492);
+gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12004068);
 }
 }}
 }
@@ -903,6 +1248,190 @@ if (gdjs.MarketCode.condition3IsTrue_0.val) {
 
 { //Subevents
 gdjs.MarketCode.eventsList8(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("MarketCrop"), gdjs.MarketCode.GDMarketCropObjects2);
+
+gdjs.MarketCode.condition0IsTrue_0.val = false;
+gdjs.MarketCode.condition1IsTrue_0.val = false;
+gdjs.MarketCode.condition2IsTrue_0.val = false;
+gdjs.MarketCode.condition3IsTrue_0.val = false;
+{
+for(var i = 0, k = 0, l = gdjs.MarketCode.GDMarketCropObjects2.length;i<l;++i) {
+    if ( gdjs.MarketCode.GDMarketCropObjects2[i].getAnimation() == 2 ) {
+        gdjs.MarketCode.condition0IsTrue_0.val = true;
+        gdjs.MarketCode.GDMarketCropObjects2[k] = gdjs.MarketCode.GDMarketCropObjects2[i];
+        ++k;
+    }
+}
+gdjs.MarketCode.GDMarketCropObjects2.length = k;}if ( gdjs.MarketCode.condition0IsTrue_0.val ) {
+{
+gdjs.MarketCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableString(runtimeScene.getVariables().get("FetchedDataTransactionState")) == "ok";
+}if ( gdjs.MarketCode.condition1IsTrue_0.val ) {
+{
+gdjs.MarketCode.condition2IsTrue_0.val = gdjs.evtTools.variable.getVariableString(runtimeScene.getVariables().get("FetchedCropValueState")) == "ok";
+}if ( gdjs.MarketCode.condition2IsTrue_0.val ) {
+{
+{gdjs.MarketCode.conditionTrue_1 = gdjs.MarketCode.condition3IsTrue_0;
+gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12010924);
+}
+}}
+}
+}
+if (gdjs.MarketCode.condition3IsTrue_0.val) {
+
+{ //Subevents
+gdjs.MarketCode.eventsList9(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("MarketCrop"), gdjs.MarketCode.GDMarketCropObjects2);
+
+gdjs.MarketCode.condition0IsTrue_0.val = false;
+gdjs.MarketCode.condition1IsTrue_0.val = false;
+gdjs.MarketCode.condition2IsTrue_0.val = false;
+gdjs.MarketCode.condition3IsTrue_0.val = false;
+{
+for(var i = 0, k = 0, l = gdjs.MarketCode.GDMarketCropObjects2.length;i<l;++i) {
+    if ( gdjs.MarketCode.GDMarketCropObjects2[i].getAnimation() == 3 ) {
+        gdjs.MarketCode.condition0IsTrue_0.val = true;
+        gdjs.MarketCode.GDMarketCropObjects2[k] = gdjs.MarketCode.GDMarketCropObjects2[i];
+        ++k;
+    }
+}
+gdjs.MarketCode.GDMarketCropObjects2.length = k;}if ( gdjs.MarketCode.condition0IsTrue_0.val ) {
+{
+gdjs.MarketCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableString(runtimeScene.getVariables().get("FetchedDataTransactionState")) == "ok";
+}if ( gdjs.MarketCode.condition1IsTrue_0.val ) {
+{
+gdjs.MarketCode.condition2IsTrue_0.val = gdjs.evtTools.variable.getVariableString(runtimeScene.getVariables().get("FetchedCropValueState")) == "ok";
+}if ( gdjs.MarketCode.condition2IsTrue_0.val ) {
+{
+{gdjs.MarketCode.conditionTrue_1 = gdjs.MarketCode.condition3IsTrue_0;
+gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12015316);
+}
+}}
+}
+}
+if (gdjs.MarketCode.condition3IsTrue_0.val) {
+
+{ //Subevents
+gdjs.MarketCode.eventsList10(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("MarketCrop"), gdjs.MarketCode.GDMarketCropObjects2);
+
+gdjs.MarketCode.condition0IsTrue_0.val = false;
+gdjs.MarketCode.condition1IsTrue_0.val = false;
+gdjs.MarketCode.condition2IsTrue_0.val = false;
+gdjs.MarketCode.condition3IsTrue_0.val = false;
+{
+for(var i = 0, k = 0, l = gdjs.MarketCode.GDMarketCropObjects2.length;i<l;++i) {
+    if ( gdjs.MarketCode.GDMarketCropObjects2[i].getAnimation() == 4 ) {
+        gdjs.MarketCode.condition0IsTrue_0.val = true;
+        gdjs.MarketCode.GDMarketCropObjects2[k] = gdjs.MarketCode.GDMarketCropObjects2[i];
+        ++k;
+    }
+}
+gdjs.MarketCode.GDMarketCropObjects2.length = k;}if ( gdjs.MarketCode.condition0IsTrue_0.val ) {
+{
+gdjs.MarketCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableString(runtimeScene.getVariables().get("FetchedDataTransactionState")) == "ok";
+}if ( gdjs.MarketCode.condition1IsTrue_0.val ) {
+{
+gdjs.MarketCode.condition2IsTrue_0.val = gdjs.evtTools.variable.getVariableString(runtimeScene.getVariables().get("FetchedCropValueState")) == "ok";
+}if ( gdjs.MarketCode.condition2IsTrue_0.val ) {
+{
+{gdjs.MarketCode.conditionTrue_1 = gdjs.MarketCode.condition3IsTrue_0;
+gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12020004);
+}
+}}
+}
+}
+if (gdjs.MarketCode.condition3IsTrue_0.val) {
+
+{ //Subevents
+gdjs.MarketCode.eventsList11(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("MarketCrop"), gdjs.MarketCode.GDMarketCropObjects2);
+
+gdjs.MarketCode.condition0IsTrue_0.val = false;
+gdjs.MarketCode.condition1IsTrue_0.val = false;
+gdjs.MarketCode.condition2IsTrue_0.val = false;
+gdjs.MarketCode.condition3IsTrue_0.val = false;
+{
+for(var i = 0, k = 0, l = gdjs.MarketCode.GDMarketCropObjects2.length;i<l;++i) {
+    if ( gdjs.MarketCode.GDMarketCropObjects2[i].getAnimation() == 5 ) {
+        gdjs.MarketCode.condition0IsTrue_0.val = true;
+        gdjs.MarketCode.GDMarketCropObjects2[k] = gdjs.MarketCode.GDMarketCropObjects2[i];
+        ++k;
+    }
+}
+gdjs.MarketCode.GDMarketCropObjects2.length = k;}if ( gdjs.MarketCode.condition0IsTrue_0.val ) {
+{
+gdjs.MarketCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableString(runtimeScene.getVariables().get("FetchedDataTransactionState")) == "ok";
+}if ( gdjs.MarketCode.condition1IsTrue_0.val ) {
+{
+gdjs.MarketCode.condition2IsTrue_0.val = gdjs.evtTools.variable.getVariableString(runtimeScene.getVariables().get("FetchedCropValueState")) == "ok";
+}if ( gdjs.MarketCode.condition2IsTrue_0.val ) {
+{
+{gdjs.MarketCode.conditionTrue_1 = gdjs.MarketCode.condition3IsTrue_0;
+gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12024516);
+}
+}}
+}
+}
+if (gdjs.MarketCode.condition3IsTrue_0.val) {
+
+{ //Subevents
+gdjs.MarketCode.eventsList12(runtimeScene);} //End of subevents
 }
 
 }
@@ -929,7 +1458,7 @@ gdjs.MarketCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableStrin
 }if ( gdjs.MarketCode.condition1IsTrue_0.val ) {
 {
 {gdjs.MarketCode.conditionTrue_1 = gdjs.MarketCode.condition2IsTrue_0;
-gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12058220);
+gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12029108);
 }
 }}
 }
@@ -939,7 +1468,7 @@ if (gdjs.MarketCode.condition2IsTrue_0.val) {
 }{runtimeScene.getVariables().get("FetchedCropValueState").setString("");
 }
 { //Subevents
-gdjs.MarketCode.eventsList9(runtimeScene);} //End of subevents
+gdjs.MarketCode.eventsList13(runtimeScene);} //End of subevents
 }
 
 }
@@ -959,14 +1488,14 @@ gdjs.MarketCode.condition0IsTrue_0.val = false;
 gdjs.MarketCode.condition1IsTrue_0.val = false;
 gdjs.MarketCode.condition2IsTrue_0.val = false;
 {
-gdjs.MarketCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableString(runtimeScene.getVariables().get("UpdateCarrotState")) == "ok";
+gdjs.MarketCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableString(runtimeScene.getVariables().get("UpdateCropTransactionState")) == "ok";
 }if ( gdjs.MarketCode.condition0IsTrue_0.val ) {
 {
 gdjs.MarketCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableString(runtimeScene.getVariables().get("UpdateCoinState")) == "ok";
 }if ( gdjs.MarketCode.condition1IsTrue_0.val ) {
 {
 {gdjs.MarketCode.conditionTrue_1 = gdjs.MarketCode.condition2IsTrue_0;
-gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12064228);
+gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12042004);
 }
 }}
 }
@@ -984,17 +1513,20 @@ gdjs.copyArray(runtimeScene.getObjects("SellState"), gdjs.MarketCode.GDSellState
     gdjs.MarketCode.GDAmountSellObjects1[i].setDisabled(false);
 }
 }{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getVariables().get("Selling"), false);
-}{runtimeScene.getVariables().get("UpdateCarrotState").setString("");
-}{runtimeScene.getVariables().get("UpdateMoneyState").setString("");
+}{runtimeScene.getVariables().get("UpdateCropTransactionState").setString("");
+}{runtimeScene.getVariables().get("UpdateCoinState").setString("");
 }{runtimeScene.getVariables().get("SellCrops").setString("");
 }{runtimeScene.getVariables().get("CarrotSold").setString("");
 }{runtimeScene.getVariables().get("PotatoSold").setString("");
+}{runtimeScene.getVariables().get("CornSold").setString("");
+}{runtimeScene.getVariables().get("CabbageSold").setString("");
+}{runtimeScene.getVariables().get("StrawberrySold").setString("");
 }}
 
 }
 
 
-};gdjs.MarketCode.eventsList11 = function(runtimeScene) {
+};gdjs.MarketCode.eventsList15 = function(runtimeScene) {
 
 {
 
@@ -1013,7 +1545,7 @@ for(var i = 0, k = 0, l = gdjs.MarketCode.GDNavBtnObjects2.length;i<l;++i) {
 gdjs.MarketCode.GDNavBtnObjects2.length = k;}if ( gdjs.MarketCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MarketCode.conditionTrue_1 = gdjs.MarketCode.condition1IsTrue_0;
-gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11987788);
+gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11996300);
 }
 }}
 if (gdjs.MarketCode.condition1IsTrue_0.val) {
@@ -1043,7 +1575,7 @@ for(var i = 0, k = 0, l = gdjs.MarketCode.GDNavBtnObjects2.length;i<l;++i) {
 gdjs.MarketCode.GDNavBtnObjects2.length = k;}if ( gdjs.MarketCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MarketCode.conditionTrue_1 = gdjs.MarketCode.condition1IsTrue_0;
-gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12031164);
+gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11941452);
 }
 }}
 if (gdjs.MarketCode.condition1IsTrue_0.val) {
@@ -1082,7 +1614,7 @@ gdjs.MarketCode.condition2IsTrue_0.val = gdjs.evtTools.variable.getVariableBoole
 }if ( gdjs.MarketCode.condition2IsTrue_0.val ) {
 {
 {gdjs.MarketCode.conditionTrue_1 = gdjs.MarketCode.condition3IsTrue_0;
-gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11983356);
+gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11952100);
 }
 }}
 }
@@ -1120,7 +1652,7 @@ for(var i = 0, k = 0, l = gdjs.MarketCode.GDMarketCropObjects2.length;i<l;++i) {
 gdjs.MarketCode.GDMarketCropObjects2.length = k;}if ( gdjs.MarketCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MarketCode.conditionTrue_1 = gdjs.MarketCode.condition1IsTrue_0;
-gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12008964);
+gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11950516);
 }
 }}
 if (gdjs.MarketCode.condition1IsTrue_0.val) {
@@ -1150,7 +1682,7 @@ for(var i = 0, k = 0, l = gdjs.MarketCode.GDMarketCropObjects2.length;i<l;++i) {
 gdjs.MarketCode.GDMarketCropObjects2.length = k;}if ( gdjs.MarketCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MarketCode.conditionTrue_1 = gdjs.MarketCode.condition1IsTrue_0;
-gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12017268);
+gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11971644);
 }
 }}
 if (gdjs.MarketCode.condition1IsTrue_0.val) {
@@ -1180,7 +1712,7 @@ for(var i = 0, k = 0, l = gdjs.MarketCode.GDMarketCropObjects2.length;i<l;++i) {
 gdjs.MarketCode.GDMarketCropObjects2.length = k;}if ( gdjs.MarketCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MarketCode.conditionTrue_1 = gdjs.MarketCode.condition1IsTrue_0;
-gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12032540);
+gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11963764);
 }
 }}
 if (gdjs.MarketCode.condition1IsTrue_0.val) {
@@ -1210,7 +1742,7 @@ for(var i = 0, k = 0, l = gdjs.MarketCode.GDMarketCropObjects2.length;i<l;++i) {
 gdjs.MarketCode.GDMarketCropObjects2.length = k;}if ( gdjs.MarketCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MarketCode.conditionTrue_1 = gdjs.MarketCode.condition1IsTrue_0;
-gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12038788);
+gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11988636);
 }
 }}
 if (gdjs.MarketCode.condition1IsTrue_0.val) {
@@ -1240,7 +1772,7 @@ for(var i = 0, k = 0, l = gdjs.MarketCode.GDMarketCropObjects2.length;i<l;++i) {
 gdjs.MarketCode.GDMarketCropObjects2.length = k;}if ( gdjs.MarketCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MarketCode.conditionTrue_1 = gdjs.MarketCode.condition1IsTrue_0;
-gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12008332);
+gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11991540);
 }
 }}
 if (gdjs.MarketCode.condition1IsTrue_0.val) {
@@ -1270,7 +1802,7 @@ for(var i = 0, k = 0, l = gdjs.MarketCode.GDMarketCropObjects2.length;i<l;++i) {
 gdjs.MarketCode.GDMarketCropObjects2.length = k;}if ( gdjs.MarketCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MarketCode.conditionTrue_1 = gdjs.MarketCode.condition1IsTrue_0;
-gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12019628);
+gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11961796);
 }
 }}
 if (gdjs.MarketCode.condition1IsTrue_0.val) {
@@ -1311,7 +1843,7 @@ gdjs.MarketCode.condition1IsTrue_0.val = gdjs.evtTools.systemInfo.hasTouchScreen
 }if ( gdjs.MarketCode.condition1IsTrue_0.val ) {
 {
 {gdjs.MarketCode.conditionTrue_1 = gdjs.MarketCode.condition2IsTrue_0;
-gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12020940);
+gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11972292);
 }
 }}
 }
@@ -1340,7 +1872,7 @@ for(var i = 0, k = 0, l = gdjs.MarketCode.GDAmountSellObjects2.length;i<l;++i) {
 gdjs.MarketCode.GDAmountSellObjects2.length = k;}if ( gdjs.MarketCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MarketCode.conditionTrue_1 = gdjs.MarketCode.condition1IsTrue_0;
-gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12023036);
+gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11974220);
 }
 }}
 if (gdjs.MarketCode.condition1IsTrue_0.val) {
@@ -1379,12 +1911,12 @@ gdjs.MarketCode.eventsList5(runtimeScene);
 {
 
 
-gdjs.MarketCode.eventsList10(runtimeScene);
+gdjs.MarketCode.eventsList14(runtimeScene);
 }
 
 
 };gdjs.MarketCode.mapOfGDgdjs_46MarketCode_46GDCloseBTNObjects1Objects = Hashtable.newFrom({"CloseBTN": gdjs.MarketCode.GDCloseBTNObjects1});
-gdjs.MarketCode.eventsList12 = function(runtimeScene) {
+gdjs.MarketCode.eventsList16 = function(runtimeScene) {
 
 {
 
@@ -1405,7 +1937,7 @@ gdjs.MarketCode.condition2IsTrue_0.val = gdjs.evtTools.input.isMouseButtonReleas
 }if ( gdjs.MarketCode.condition2IsTrue_0.val ) {
 {
 {gdjs.MarketCode.conditionTrue_1 = gdjs.MarketCode.condition3IsTrue_0;
-gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12067740);
+gdjs.MarketCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12046060);
 }
 }}
 }
@@ -1417,7 +1949,7 @@ if (gdjs.MarketCode.condition3IsTrue_0.val) {
 }
 
 
-};gdjs.MarketCode.eventsList13 = function(runtimeScene) {
+};gdjs.MarketCode.eventsList17 = function(runtimeScene) {
 
 {
 
@@ -1490,14 +2022,14 @@ gdjs.MarketCode.eventsList0(runtimeScene);} //End of subevents
 {
 
 
-gdjs.MarketCode.eventsList11(runtimeScene);
+gdjs.MarketCode.eventsList15(runtimeScene);
 }
 
 
 {
 
 
-gdjs.MarketCode.eventsList12(runtimeScene);
+gdjs.MarketCode.eventsList16(runtimeScene);
 }
 
 
@@ -1583,7 +2115,7 @@ gdjs.MarketCode.GDCloseBTNObjects2.length = 0;
 gdjs.MarketCode.GDCloseBTNObjects3.length = 0;
 gdjs.MarketCode.GDCloseBTNObjects4.length = 0;
 
-gdjs.MarketCode.eventsList13(runtimeScene);
+gdjs.MarketCode.eventsList17(runtimeScene);
 return;
 
 }
